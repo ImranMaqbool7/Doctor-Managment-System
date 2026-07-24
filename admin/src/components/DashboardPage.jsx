@@ -308,7 +308,7 @@ useEffect(() => {
   <label className={s.searchLabel}>Search Doctors</label>
   <div className={s.searchContainer}>
     <div className={s.searchInputContainer}>
-      <input value={query} onChange={(e) => setQuery=(e.target.value)}
+      <input value={query}onChange={(e) => setQuery(e.target.value)}
       className={s.searchInput} placeholder="Search name /Specialization /fee"/>
       <Search className={s.searchIcon} />
 

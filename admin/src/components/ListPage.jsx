@@ -238,7 +238,7 @@ console.log("TOKEN:", token);
            <div className={doctorListStyles.headerSearchContainer}>
             <div className={doctorListStyles.searchBox}>
                 <Search size={16} className={doctorListStyles.searchIcon} />
-                <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder='Search Doctor, specialization'  className={doctorListStyles.searchInput}/>
+                <input value={query} onChange={(e) => setQuery(e.target.value)}placeholder='Search Doctor, specialization'  className={doctorListStyles.searchInput}/>
 
             </div>
             <button onClick={() => {
