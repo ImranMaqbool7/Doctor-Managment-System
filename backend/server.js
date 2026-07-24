@@ -21,6 +21,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
+  "https://imran-maqbool-arvr.vercel.app/",
 ];
 
 // ======================
