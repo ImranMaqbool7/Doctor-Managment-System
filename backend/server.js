@@ -15,12 +15,8 @@ import appointmentRouter from "./routes/appointmentRoute.js";
 dotenv.config();
 
 
-console.log("Publishable:", process.env.CLERK_PUBLISHABLE_KEY);
-console.log(
-  "Secret:",
-  process.env.CLERK_SECRET_KEY ? "Loaded" : "Missing"
-);
- 
+console.log("CLERK_PUBLISHABLE_KEY:", process.env.CLERK_PUBLISHABLE_KEY);
+console.log("CLERK_SECRET_KEY:", process.env.CLERK_SECRET_KEY ? "Loaded" : "Missing");
 
 const app = express();
  
