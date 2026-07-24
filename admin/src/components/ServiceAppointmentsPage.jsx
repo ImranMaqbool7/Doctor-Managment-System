@@ -3,7 +3,7 @@ import { serviceAppointmentsStyles } from '../assets/frontend/dummyStyles';
 import { Loader2, Search, SearchIcon, XIcon } from 'lucide-react';
 
 
-  const API_BASE = "http://127.0.0.1:4000";
+ const API_BASE = "https://doctor-managment-system-production.up.railway.app/api";
 
  // Helper Function
 

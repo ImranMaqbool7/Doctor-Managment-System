@@ -3,7 +3,7 @@ import { addServiceStyles } from '../assets/frontend/dummyStyles';
 import { AlertTriangle, Calendar, CheckCircle, Clock, Image, Plus, Trash2, XCircle } from 'lucide-react';
 
 const AddService = ({serviceId}) => {
-      const API_BASE = "http://127.0.0.1:4000";
+     const API_BASE = "https://doctor-managment-system-production.up.railway.app/api";
 
        const fileRef = useRef(null);
   const [imagePreview, setImagePreview] = useState(null);

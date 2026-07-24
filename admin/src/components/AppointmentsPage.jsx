@@ -3,7 +3,7 @@ import Appointments from '../pages/Appointments';
 import { pageStyles, statusClasses, keyframesStyles } from '../assets/frontend/dummyStyles';
 import { Calendar, Search } from 'lucide-react';
 
-const API_BASE = "http://127.0.0.1:4000";
+const API_BASE = "https://doctor-managment-system-production.up.railway.app/api";
 
 // Helper function
 
