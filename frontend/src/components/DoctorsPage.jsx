@@ -3,7 +3,7 @@ import { doctorsPageStyles } from '../assets/frontend/dummyStyles';
 import { ChevronRight, CircleChevronDown, CircleChevronUp, Medal, MousePointer2Off, Search, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 const DoctorsPage = () => {
-     const API_BASE= 'http://localhost:4000';
+     const API_BASE= 'VITE_BACKEND_URL';
 
        const [allDoctors, setAllDoctors] = useState([]);
   const [loading, setLoading] = useState(true);
