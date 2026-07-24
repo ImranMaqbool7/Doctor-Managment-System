@@ -13,6 +13,13 @@ import serviceAppointmentRouter from "./routes/serviceAppointmentRoute.js";
 import appointmentRouter from "./routes/appointmentRoute.js";
 
 dotenv.config();
+
+
+console.log("Publishable:", process.env.CLERK_PUBLISHABLE_KEY);
+console.log(
+  "Secret:",
+  process.env.CLERK_SECRET_KEY ? "Loaded" : "Missing"
+);
  
 
 const app = express();
@@ -21,7 +28,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://imran-maqbool-arvr.vercel.app/",
+  "https://imran-maqbool-arvr.vercel.app",
 ];
 
 // ======================
