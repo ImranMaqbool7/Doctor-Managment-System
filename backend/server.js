@@ -93,10 +93,10 @@ app.get("/", (req, res) => {
 // SERVER
 // ======================
 
-if (process.env.NODE_ENV !== "production") {
-  app.listen(port, () => {
-    console.log(`Server Started on http://localhost:${port}`);
-  });
-}
+const port = process.env.PORT || 4000;
+
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server Started on port ${port}`);
+});
 
 export default app;
