@@ -19,19 +19,11 @@ console.log("CLERK_PUBLISHABLE_KEY:", process.env.CLERK_PUBLISHABLE_KEY);
 console.log("CLERK_SECRET_KEY:", process.env.CLERK_SECRET_KEY ? "Loaded" : "Missing");
 
 const app = express();
- 
-
-// const allowedOrigins = [
-//   "http://localhost:5173",
-//   "http://localhost:5174",
-//   "https://doctor-managment-system-sazn.vercel.app/",
-// ];
-
-
-app.use(cors({
-  origin: true,
-  credentials: true,
-}));
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:5174",
+  "https://doctor-managment-system-sazn.vercel.app",
+];
 // ======================
 // CREATE UPLOADS FOLDER
 // ======================
@@ -57,10 +49,7 @@ app.use(
 
       return callback(new Error("Not allowed by CORS"));
     },
-
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
