@@ -24,7 +24,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://doctor-managment-system-o8ev.vercel.app",
+  "https://doctor-managment-system-sazn.vercel.app/",
 ];
 
 // ======================
