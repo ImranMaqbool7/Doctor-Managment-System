@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, Medal, MousePointer2Off } from 'lucide-react';
 
 const HomeDoctors = ({previewCount = 8}) => {
-    const API_BASE= 'http://localhost:4000';
+    const API_BASE= 'https://doctor-managment-system-production.up.railway.app';
     const [doctors, setDoctors] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");

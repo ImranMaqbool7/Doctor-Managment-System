@@ -22,7 +22,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useAuth, useUser } from "@clerk/clerk-react";
 import { doctorDetailStyles } from "../assets/frontend/dummyStyles";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://doctor-managment-system-production.up.railway.app";
 
 function getScheduleDates(schedule) {
   if (!schedule) return [];

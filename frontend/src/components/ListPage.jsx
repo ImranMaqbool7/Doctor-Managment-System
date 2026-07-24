@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { listPageStyles } from '../assets/frontend/dummyStyles';
 import { useParams } from "react-router-dom";
 import { X, Search, Calendar, Phone } from "lucide-react";
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://doctor-managment-system-production.up.railway.app";
 
 function parseDateTime(date, time) {
   return new Date(`${date}T${time}:00`);

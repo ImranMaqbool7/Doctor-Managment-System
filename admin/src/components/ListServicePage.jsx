@@ -13,7 +13,7 @@ import {
 import { serviceListStyles as s } from '../assets/frontend/dummyStyles';
 
 export default function ListServicePage() {
-  const API_BASE = "http://localhost:4000";
+  const API_BASE = "https://doctor-managment-system-production.up.railway.app";
 
   const [services, setServices] = useState([]);
   const [openDetails, setOpenDetails] = useState({});

@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Bell, CalendarDays, CheckCircle, Clock, CreditCard, Wallet, XCircle } from 'lucide-react';
 import { useAuth, useUser } from '@clerk/clerk-react';
 import { Toaster } from 'react-hot-toast';
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://doctor-managment-system-production.up.railway.app";
 
 const API = axios.create({baseURL: API_BASE});
 

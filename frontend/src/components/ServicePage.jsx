@@ -109,7 +109,7 @@ const ServiceCard = ({ service }) => {
 
 const ServicePage = ({previewCount= 9999}) => {
 
-      const API_BASE = "http://localhost:4000";
+      const API_BASE = "https://doctor-managment-system-production.up.railway.app";
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
