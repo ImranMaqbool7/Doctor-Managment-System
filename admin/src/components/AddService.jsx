@@ -83,7 +83,7 @@ const AddService = ({serviceId}) => {
     async function loadService() {
       if (!serviceId) return;
       try {
-        const res = await fetch(`${API_BASE}/api/services/${serviceId}`);
+        const res = await fetch(`${API_BASE}/services/${serviceId}`);
         if (!res.ok) {
           const txt = await res.text().catch(() => "");
           console.warn("Failed to fetch service:", res.status, txt);
