@@ -472,7 +472,7 @@ export const updateAppointment = async (req, res) => {
       update.rescheduledTo = { date: body.date, time: body.time };
     }
 
-const updated = Appointment.findByIdAndUpdate(id, update,
+const updated = await Appointment.findByIdAndUpdate(id, update,
   { new: true, runValidators: true }
 ).populate({ path: "doctorId", select: "name imageUrl" }).lean();
 
