@@ -280,9 +280,9 @@ const AddService = ({serviceId}) => {
         fd.append("removeImage", "true");
       }
 
-      const url = serviceId
-        ? `${API_BASE}/api/services/${serviceId}`
-        : `${API_BASE}/api/services`;
+     const url = serviceId
+  ? `${API_BASE}/services/${serviceId}`
+  : `${API_BASE}/services`;
       const method = serviceId ? "PUT" : "POST";
 
       const res = await fetch(url, { method, body: fd });

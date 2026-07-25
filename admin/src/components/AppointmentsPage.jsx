@@ -57,9 +57,9 @@ const AppointmentsPage = () => {
       setError(null);
       try {
         const q = query.trim();
-        const url = `${API_BASE}/api/appointments?limit=200${
-          q ? `&search=${encodeURIComponent(q)}` : ""
-        }`;
+      const url = `${API_BASE}/appointments?limit=200${
+  q ? `&search=${encodeURIComponent(q)}` : ""
+}`;
         const res = await fetch(url);
         if (!res.ok) {
           const body = await res.json().catch(() => ({}));
@@ -145,8 +145,8 @@ const AppointmentsPage = () => {
     if (!appt) return;
 
     const statusLower = (appt.status || "").toLowerCase();
-    const isCancelled =
-      statusLower === "canceled" || statusLower === "cancelled";
+   const isCancelled =
+  statusLower === "canceled" || statusLower === "cancelled";
     const isCompleted = statusLower === "completed";
 
     if (isCancelled || isCompleted) return;
@@ -164,7 +164,7 @@ const AppointmentsPage = () => {
       );
       setShowAll(true);
 
-      const res = await fetch(`${API_BASE}/api/appointments/${id}/cancel`, {
+      const res = awaitfetch(`${API_BASE}/appointments/${id}/cancel`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
       });
@@ -195,7 +195,7 @@ const AppointmentsPage = () => {
       console.error("Cancel error:", err);
       setError(err.message || "Failed to cancel appointment");
       try {
-        const reload = await fetch(`${API_BASE}/api/appointments?limit=200`);
+        const reload = awaitfetch(`${API_BASE}/appointments?limit=200`);
         if (reload.ok) {
           const body = await reload.json();
           const items = (body?.appointments || []).map((a) => ({
