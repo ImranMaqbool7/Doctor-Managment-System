@@ -21,7 +21,7 @@ console.log("CLERK_SECRET_KEY:", process.env.CLERK_SECRET_KEY ? "Loaded" : "Miss
 const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
-  "http://localhost:5174",
+  "https://doctor-managment-system-eu9m-delta.vercel.app",
   "https://doctor-managment-system-sazn.vercel.app",
 ];
 // ======================
